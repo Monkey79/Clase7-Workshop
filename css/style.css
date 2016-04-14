@@ -1,0 +1,138 @@
+body{
+	margin: 0;
+}
+
+.cleaner {
+    clear: both;
+}
+
+
+.main-wrapper{
+	/* border: 1px solid red; */
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+/*---------Personal Info-----------*/
+.main-wrapper .personal-info{
+	border: 1px solid blue;
+	margin-bottom: 2%;
+}
+
+.main-wrapper .personal-info .name-contact{
+	display: inline-block;
+	/* border: 1px solid green; */
+	float: left;
+}
+.main-wrapper .personal-info .name-contact i {
+	font-size: 40px;	
+}
+
+.main-wrapper .personal-info .photo{
+	display: inline-block;
+	/* border: 1px solid black; */
+	float: right;
+}
+.main-wrapper .personal-info .photo img{
+	width: 200px;
+	height: 200px;
+}
+
+/*------------About Me------------*/
+.main-wrapper .about-me {
+	border: 1px solid green;
+	margin-bottom: 2%;
+}
+
+
+/*----------Skills------------*/
+.main-wrapper .skills {	
+	border: 1px solid blue;
+	padding: 0 1%;
+	display: block;
+	padding: 0 auto;
+	margin-bottom: 2%;
+}
+.main-wrapper .skills .skill {	
+	/* border: 1px solid green; */
+	display: inline-block;
+	text-align: center;
+	width: 392px;
+	height: 358px;
+	box-sizing: border-box;	
+}
+.main-wrapper .skills .skill img{
+	width: 200px;
+	height: 200px;
+}
+
+
+/*----------Educations------------*/
+.main-wrapper .educations {
+	border: 1px solid violet;
+	margin-bottom: 2%;
+}
+.main-wrapper .educations .educations-header i{
+	font-size: 40px;
+}
+.main-wrapper .educations .education {
+	margin-left: 3%;
+}
+
+/*-------------Contact------------*/
+.main-wrapper .contact-me{
+	border: 1px solid red;
+	box-sizing: 2px solid brown;
+	height: 300px;
+	margin-bottom: 2%;
+}
+
+.main-wrapper .contact-me .contact-form{
+	/* border: 2px solid green; */	
+}
+
+.main-wrapper .contact-me .contact-form .col-left{
+	width: 50%;
+	/* border: 1px solid red; */
+	float: left;
+}
+.main-wrapper .contact-me .contact-form .col-left label input[type=text], input[type=email] {
+   /*  border: solid 1px #BFBDBD; */
+    color: #979797;
+    height: 48px;
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+}
+
+.main-wrapper .contact-me .contact-form .col-right{
+	width: 49%;
+	/* border: 1px solid blue; */
+	float: right;	
+}
+.main-wrapper .contact-me .contact-form .col-right textarea {
+    /* border: solid 1px #BFBDBD; */
+    color: #979797;
+    /* height: 68px; */
+    /* padding-left: 10px; */
+    width: 90%;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+
+.main-wrapper .contact-me .contact-form .form-btn{
+    background-color: #00aef3;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;    
+    display: block; 
+    margin: 12px auto;
+    box-shadow: 5px 5px 5px #888888;
+}
