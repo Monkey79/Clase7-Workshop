@@ -8,7 +8,7 @@ body{
 
 
 .main-wrapper{
-	/* border: 1px solid red; */
+	border: 1px solid green;
 	width: 90%;
 	margin: 0 auto;
 	position: relative;
@@ -18,7 +18,7 @@ body{
 
 /*---------Personal Info-----------*/
 .main-wrapper .personal-info{
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 	margin-bottom: 2%;
 }
 
@@ -43,30 +43,33 @@ body{
 
 /*------------About Me------------*/
 .main-wrapper .about-me {
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	margin-bottom: 2%;
 }
 
 
 /*----------Skills------------*/
 .main-wrapper .skills {	
-	border: 1px solid blue;
-	padding: 0 1%;
+	/* border: 1px solid blue; */
 	display: block;
-	padding: 0 auto;
 	margin-bottom: 2%;
+	position: relative;	
 }
+
 .main-wrapper .skills .skill {	
 	/* border: 1px solid green; */
 	display: inline-block;
 	text-align: center;
-	width: 392px;
-	height: 358px;
+	width: 24%;
+	height: 30%;
 	box-sizing: border-box;	
 }
 .main-wrapper .skills .skill img{
 	width: 200px;
 	height: 200px;
+}
+.main-wrapper .skills article:nth-child(2) {
+	margin: 1%;
 }
 
 
@@ -86,12 +89,13 @@ body{
 .main-wrapper .contact-me{
 	border: 1px solid red;
 	box-sizing: 2px solid brown;
-	height: 300px;
+	/* height: 300px; */
 	margin-bottom: 2%;
 }
 
 .main-wrapper .contact-me .contact-form{
-	/* border: 2px solid green; */	
+	border: 2px solid green;
+	box-sizing: border-box;	
 }
 
 .main-wrapper .contact-me .contact-form .col-left{
@@ -100,7 +104,7 @@ body{
 	float: left;
 }
 .main-wrapper .contact-me .contact-form .col-left label input[type=text], input[type=email] {
-   /*  border: solid 1px #BFBDBD; */
+    border: solid 1px black;
     color: #979797;
     height: 48px;
     width: 90%;
@@ -114,7 +118,7 @@ body{
 	float: right;	
 }
 .main-wrapper .contact-me .contact-form .col-right textarea {
-    /* border: solid 1px #BFBDBD; */
+    border: solid 1px black;
     color: #979797;
     /* height: 68px; */
     /* padding-left: 10px; */
@@ -122,6 +126,7 @@ body{
     margin-bottom: 15px;
     border-radius: 12px;
     overflow-y: scroll;
+    width: 97%;
 }
 
 .main-wrapper .contact-me .contact-form .form-btn{
@@ -135,4 +140,39 @@ body{
     display: block; 
     margin: 12px auto;
     box-shadow: 5px 5px 5px #888888;
+}
+
+@media (max-width:985px){
+	.main-wrapper .skills .skill img{
+		width: 60%;
+		height: 60%;
+	}	
+}
+
+@media (max-width:689px){
+	.main-wrapper .skills .skill {			
+		display: block;
+		width: 100%			
+	}
+	.main-wrapper .skills .skill img{
+		width: 20%;
+		height: 20%;
+		float: left;
+	}
+}
+
+@media (max-width:518px){
+	.main-wrapper .personal-info .name-contact{
+		display: inline-block;
+		float: right;
+	}
+	.main-wrapper .personal-info .photo{
+		display: inline-block;
+		position: absolute;
+		box-sizing: border-box;
+	}
+	.main-wrapper .personal-info .photo img{
+		width: 25%;
+		height: 25%;
+	}
 }
