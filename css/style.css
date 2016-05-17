@@ -1,6 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700);
+/*font-family: 'Raleway', sans-serif;*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+/* font-family: 'Open Sans', sans-serif; */
+
 body{
 	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+	background-color: #EAE6E6;
+	font-size: 26px;
 }
+
+h1 h2 h3 h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
 
 .cleaner {
     clear: both;
@@ -8,7 +22,7 @@ body{
 
 
 .main-wrapper{
-	border: 1px solid green;
+	/* border: 1px solid green; */
 	width: 90%;
 	margin: 0 auto;
 	position: relative;
@@ -18,7 +32,7 @@ body{
 
 /*---------Personal Info-----------*/
 .main-wrapper .personal-info{
-	/* border: 1px solid blue; */
+	background-color: antiquewhite;
 	margin-bottom: 2%;
 }
 
@@ -27,14 +41,20 @@ body{
 	/* border: 1px solid green; */
 	float: left;
 }
+.main-wrapper .personal-info .name-contact a {
+	text-decoration: none;
+	color: inherit;
+}
 .main-wrapper .personal-info .name-contact i {
 	font-size: 40px;	
 }
 
 .main-wrapper .personal-info .photo{
 	display: inline-block;
-	/* border: 1px solid black; */
+	margin-top: 1%;
+	border: 2px solid #FA9709;
 	float: right;
+	height: 200px;
 }
 .main-wrapper .personal-info .photo img{
 	width: 200px;
@@ -43,8 +63,10 @@ body{
 
 /*------------About Me------------*/
 .main-wrapper .about-me {
-	/* border: 1px solid green; */
 	margin-bottom: 2%;
+}
+.main-wrapper .about-me p {
+	font-size: 26px;
 }
 
 
@@ -75,7 +97,7 @@ body{
 
 /*----------Educations------------*/
 .main-wrapper .educations {
-	border: 1px solid violet;
+	/* border: 1px solid violet; */
 	margin-bottom: 2%;
 }
 .main-wrapper .educations .educations-header i{
@@ -87,14 +109,14 @@ body{
 
 /*-------------Contact------------*/
 .main-wrapper .contact-me{
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	box-sizing: 2px solid brown;
 	/* height: 300px; */
 	margin-bottom: 2%;
 }
 
 .main-wrapper .contact-me .contact-form{
-	border: 2px solid green;
+	/* border: 2px solid green; */
 	box-sizing: border-box;	
 }
 
